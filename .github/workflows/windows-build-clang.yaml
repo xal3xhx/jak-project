@@ -6,7 +6,7 @@ on:
       cmakePreset:
         required: true
         type: string
-        default: "Release-windows-clang"
+        default: Release-windows-clang
       cachePrefix:
         required: true
         type: string
