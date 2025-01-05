@@ -6,14 +6,16 @@ on:
       cmakePreset:
         required: true
         type: string
+        default: "Release-windows-clang"
       cachePrefix:
         required: true
         type: string
+        default: ""
       uploadArtifacts:
         required: false
         type: boolean
-        default: false
-
+        default: true
+  workflow_dispatch: {}
 jobs:
   build:
     name: Clang
